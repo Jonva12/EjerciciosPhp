@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>1. Comunidad</title>
+		<title>2. Mayor</title>
 	</head>
 	<body>
 	<?php
