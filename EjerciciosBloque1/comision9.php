@@ -4,13 +4,18 @@
 	</head>
 	<body>
 	<?php
-		$num = rand(1,100);
-		$i = 1;
-		do{
-			$cuadrado = pow($num,$i);
-			echo 'El numero '.$num.' exponenciado '.$i.' = '.$cuadrado.'</br>';
-			$i++;
-		}while($cuadrado<100);
+		$ventas= 15000;
+		$comision = 0;
+		if($ventas < 10000){
+			$comision = 5;
+		}elseif($ventas >= 10000 && $ventas < 20000){
+			$comision = 8;
+		}elseif ($ventas >=20000 && $ventas < 40000) {
+			$comision = 10;
+		}elseif ($ventas >= 40000) {
+			$comision = 13;
+		}
+		echo $res = ($ventas*($comision/100);
 	?>
 	</body>
 </html>
