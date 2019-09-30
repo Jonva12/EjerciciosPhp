@@ -8,9 +8,10 @@
 		$suma = 0;
 		for ($i=0; $i < 20; $i++) { 
 			$numeros[$i] = rand(1,20);
-			echo $numeros[$i]."</br>";
 			$suma+=$numeros[$i];
 		}
+		natsort($numeros);
+		print_r($numeros);
 		$media = $suma/count($numeros);
 		$min = min($numeros);
 		$max = max($numeros);
