@@ -20,11 +20,11 @@
 		);
 
 		echo "<table>";
-		foreach ($meses as $mes => $dias) {
 			echo("<tr>");
-				echo("<td>".$mes."</td>");
-			echo("</tr>");
+		foreach ($meses as $mes => $dias){
+				echo("<td>".$mes."</br>".$dias."</td>");
 		}
+			echo("</tr>");
 		echo "</table>";
 	?>
 	</body>

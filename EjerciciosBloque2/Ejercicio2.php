@@ -5,7 +5,7 @@
 	<body>
 	<?php
 		$columnas=5;
-		$filas=2;
+		$filas=1;
 
 		function crearTabla($filas, $columnas){
 			echo "<table>";
