@@ -6,9 +6,11 @@
 	<?php
 		$cadena = "Somos o no somos";
 		function palindromo($cadena){
+			//separa las palabras
     		$separar = explode(" ", strtolower($cadena));
     
     		foreach($separar as $palabra){
+    			//quita los espacion en blanco
         		trim($palabra);
         		$nuevo .= $palabra; 
    			}

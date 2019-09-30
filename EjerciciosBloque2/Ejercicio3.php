@@ -18,8 +18,6 @@
 		echo('<div style="color:green">Maximo '.$max."</div></br>");
 		echo("Suma: ".$suma."</br>");
 		echo("Media: ".$media."</br>");
-
-		
 	?>
 	</body>
 </html>
