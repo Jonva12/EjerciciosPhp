@@ -4,7 +4,7 @@
 	</head>
 	<body>
        <?php
-            $nums = array(3, -6, 4);
+            $nums = array(3, -6, 4, 2, 10);
 
             function areaCuadrado($lado){
                 if ($lado < 0){
