@@ -13,7 +13,7 @@
             $calcular = calcHipotenusa($_GET['Cateto1'], $_GET['Cateto2']);
             function calcHipotenusa($cateto1, $cateto2){
                 $hipotenusa = sqrt(pow($cateto1,2)+pow($cateto2, 2));
-                echo("<div>".$hipotenusa."</div");
+                echo("<div>La hipotenusa es: ".$hipotenusa."</div");
 
             }
         ?>
