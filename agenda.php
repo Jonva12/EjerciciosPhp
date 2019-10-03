@@ -44,7 +44,7 @@
 			}else{
 				if (array_key_exists(strtolower($_POST['nombre']), $array_agenda) && isset($_POST['email'])){
 						unset($array_agenda[strtolower($_POST['nombre'])]);
-						echo "Se ha eliminado el nombre ".$_POST['nombre'];
+						echo "Se ha eliminado el contacto ".$_POST['nombre'];
 				}else{
 					$array_agenda[strtolower($_POST['nombre'])]= $_POST['email'];
 				}
@@ -69,7 +69,12 @@
 		    <th>Email</th>
 		  </tr>
 		  	<?php
-		  		// recorremos el array y mostramos los contactos
+		  		foreach ($array_agenda as $nombre => $email) {
+		  			echo "<tr>";
+		  				echo "<td>".ucfirst($nombre)."</td>";
+		  				echo "<td>$email</td>";
+		  			echo "</tr>";
+		  		}
 			?>
 		</table>
 
