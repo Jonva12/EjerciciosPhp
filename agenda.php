@@ -1,8 +1,11 @@
+<?php
+	session_start(); //Iniciamos la Sesion o la Continuamos
+?>
 <!doctype html>
 <html>
 	<head>
 		<title>
-			DWES02 - Agenda
+			DWES02 - Agenda de <?php echo $_SESSION['user']; ?>
 		</title>
 	</head>
 	<body>
@@ -54,7 +57,7 @@
 
 		<form action="" method="post">
 			<!-- Campo oculto para ir almacenando los elementos de la agenda-->
-			<input name="agenda" type="text" value="<?php echo  arraytostring($array_agenda)?>"/><br>
+			<input name="agenda" type="hidden" value="<?php echo  arraytostring($array_agenda)?>"/><br>
 			Nombre:<br>
 			<input type="text" name="nombre" value="<?php echo $_POST['nombre']?>"><br><br>
 			Email:<br>
@@ -62,7 +65,7 @@
 			<button type="submit" name="submit" >Añadir contacto</button>
 		</form>
 
-		<h2>AGENDA</h2>
+		<h2>Agenda de <?php echo $_SESSION['user']; ?></h2>
 		<table>
 		  <tr>
 		    <th>Nombre</th>
@@ -77,6 +80,5 @@
 		  		}
 			?>
 		</table>
-
 	</body>
 </html>
